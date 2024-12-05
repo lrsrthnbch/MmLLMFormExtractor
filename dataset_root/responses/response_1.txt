@@ -1,0 +1,26 @@
+{
+  "adresse_name_aendern": {
+      "checked": false
+  },
+  "neue_anschrift": {
+    "checked": false,
+    "vorname": "",
+    "nachname": "",
+    "strasse": "",
+    "hausnummer": "",
+    "postleitzahl": "",
+    "ort": "",
+    "telefon_privat": "",
+    "telefon_geschaeftlich": ""
+  },
+  "aenderung_alle_vertraege": {
+    "checked": false
+  },
+  "aenderung_folgende_vertraege": {
+    "checked": false,
+    "vertrag": ""
+  },
+  "weiter_betreut_werden": {
+    "checked": false
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "betreuung_aendern": {
+    "checked": false,
+    "name": "",
+    "bankleitzahl": "",
+    "filial_nr": "",
+    "adm_gnr": "",
+    "monat": "mm",
+    "jahr": "yy",
+    "grund": ""
+  }
+}

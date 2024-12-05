@@ -1,0 +1,13 @@
+{
+  "staatliche_foerderung": {
+    "checked": false,
+    "bestaetigung": {
+      "checked": false,
+      "jahr": ""
+    },
+    "wop_antrag": {
+      "checked": false,
+      "jahr": ""
+    }
+  }
+}

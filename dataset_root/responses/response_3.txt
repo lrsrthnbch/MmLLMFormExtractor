@@ -1,0 +1,9 @@
+{
+  "umbuchung_beantragen": {
+    "checked": false,
+    "von_bausparnummer": "",
+    "auf_bausparnummer": "",
+    "betrag": "",
+    "datum": ""
+  }
+}

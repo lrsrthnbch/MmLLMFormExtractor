@@ -1,0 +1,48 @@
+You are tasked with extracting values from a german document in valid json format.
+Here is the full list of possible objects:
+{
+  "vertragsaenderung_beantragen": {
+    "checked": false
+  },
+  "flexible_vertragsteilung": { 
+    "checked": false,
+    "bausparsumme_1": "",
+    "guthaben_1": "",
+    "bausparsumme_2": "",
+    "guthaben_2": ""
+  },
+  "anspruch_junge_leute_bonus": {
+    "checked": false,
+    "teilvertrag": ""
+  },
+  "ermaessigung_bausparsumme": {
+    "checked": false,
+    "ermaessigung_bausparsumme_auf": ""
+  },
+  "variantenwechsel": {
+    "checked": false,
+    "von_tarif": "",
+    "nach_tarif": "",
+    "gesamtvertrag": {
+      "checked": false
+    },
+    "teilvertrag": {
+      "checked": false,
+      "vertragsnummer": "",
+      "bausparsumme": ""
+    }
+  },
+  "zusammenlegung": {
+    "checked": false,
+    "vertragsnummern": ""
+  },
+  "stammnummernaenderung": {
+    "checked": false,
+    "vertraege": ""
+  },
+  "wahlzuteilung": {
+    "checked": false,
+    "prozentwert": ""
+  }
+}
+Return the json. Objects can be empty. Checkboxes (crossed out in the document) are labeled checked in the json and should be a boolean.

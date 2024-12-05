@@ -1,0 +1,12 @@
+{
+  "bausparnummer": "",
+  "darlehensnummer": "",
+  "anschrift": {
+      "vorname": "",
+      "nachname": "",
+      "strasse": "",
+      "hausnummer": "",
+      "postleitzahl": "",
+      "ort": ""
+  }
+}
