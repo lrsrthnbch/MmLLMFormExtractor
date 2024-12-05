@@ -1,0 +1,782 @@
+[
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image",
+            "image": "images\\bsw_01_preprocessed_section_0.jpg"
+          },
+          {
+            "type": "text",
+            "text": "You are tasked with extracting values from a german document in valid json format.\nHere is the full list of possible objects:\n{\n  \"bausparnummer\": \"\",\n  \"darlehensnummer\": \"\",\n  \"anschrift\": {\n      \"vorname\": \"\",\n      \"nachname\": \"\",\n      \"strasse\": \"\",\n      \"hausnummer\": \"\",\n      \"postleitzahl\": \"\",\n      \"ort\": \"\"\n  }\n}\nReturn the json. Objects can be empty. Checkboxes (crossed out in the document) are labeled checked in the json and should be a boolean."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"bausparnummer\": \"12345678G01\", \"darlehensnummer\": \"\", \"anschrift\": {\"vorname\": \"\", \"nachname\": \"\", \"strasse\": \"\", \"hausnummer\": \"\", \"postleitzahl\": \"\", \"ort\": \"\"}}"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image",
+            "image": "images\\bsw_01_preprocessed_section_1.jpg"
+          },
+          {
+            "type": "text",
+            "text": "You are tasked with extracting values from a german document in valid json format.\nHere is the full list of possible objects:\n{\n  \"adresse_name_aendern\": {\n      \"checked\": false\n  },\n  \"neue_anschrift\": {\n    \"checked\": false,\n    \"vorname\": \"\",\n    \"nachname\": \"\",\n    \"strasse\": \"\",\n    \"hausnummer\": \"\",\n    \"postleitzahl\": \"\",\n    \"ort\": \"\",\n    \"telefon_privat\": \"\",\n    \"telefon_geschaeftlich\": \"\"\n  },\n  \"aenderung_alle_vertraege\": {\n    \"checked\": false\n  },\n  \"aenderung_folgende_vertraege\": {\n    \"checked\": false,\n    \"vertrag\": \"\"\n  },\n  \"weiter_betreut_werden\": {\n    \"checked\": false\n  }\n}\nReturn the json. Objects can be empty. Checkboxes (crossed out in the document) are labeled checked in the json and should be a boolean."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"adresse_name_aendern\": {\"checked\": true}, \"neue_anschrift\": {\"checked\": true, \"vorname\": \"Elisabeth\", \"nachname\": \"M\\u00fcller\", \"strasse\": \"Freudenweg\", \"hausnummer\": \"4\", \"postleitzahl\": \"88242\", \"ort\": \"Wildstadt\", \"telefon_privat\": \"078242249\", \"telefon_geschaeftlich\": \"\"}, \"aenderung_alle_vertraege\": {\"checked\": true}, \"aenderung_folgende_vertraege\": {\"checked\": false, \"vertrag\": \"\"}, \"weiter_betreut_werden\": {\"checked\": false}}"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image",
+            "image": "images\\bsw_01_preprocessed_section_2.jpg"
+          },
+          {
+            "type": "text",
+            "text": "You are tasked with extracting values from a german document in valid json format.\nHere is the full list of possible objects:\n{\n  \"vertragsaenderung_beantragen\": {\n    \"checked\": false\n  },\n  \"flexible_vertragsteilung\": { \n    \"checked\": false,\n    \"bausparsumme_1\": \"\",\n    \"guthaben_1\": \"\",\n    \"bausparsumme_2\": \"\",\n    \"guthaben_2\": \"\"\n  },\n  \"anspruch_junge_leute_bonus\": {\n    \"checked\": false,\n    \"teilvertrag\": \"\"\n  },\n  \"ermaessigung_bausparsumme\": {\n    \"checked\": false,\n    \"ermaessigung_bausparsumme_auf\": \"\"\n  },\n  \"variantenwechsel\": {\n    \"checked\": false,\n    \"von_tarif\": \"\",\n    \"nach_tarif\": \"\",\n    \"gesamtvertrag\": {\n      \"checked\": false\n    },\n    \"teilvertrag\": {\n      \"checked\": false,\n      \"vertragsnummer\": \"\",\n      \"bausparsumme\": \"\"\n    }\n  },\n  \"zusammenlegung\": {\n    \"checked\": false,\n    \"vertragsnummern\": \"\"\n  },\n  \"stammnummernaenderung\": {\n    \"checked\": false,\n    \"vertraege\": \"\"\n  },\n  \"wahlzuteilung\": {\n    \"checked\": false,\n    \"prozentwert\": \"\"\n  }\n}\nReturn the json. Objects can be empty. Checkboxes (crossed out in the document) are labeled checked in the json and should be a boolean."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"vertragsaenderung_beantragen\": {\"checked\": false}, \"flexible_vertragsteilung\": {\"checked\": false, \"bausparsumme_1\": \"\", \"guthaben_1\": \"\", \"bausparsumme_2\": \"\", \"guthaben_2\": \"\"}, \"anspruch_junge_leute_bonus\": {\"checked\": false, \"teilvertrag\": \"\"}, \"ermaessigung_bausparsumme\": {\"checked\": false, \"ermaessigung_bausparsumme_auf\": \"\"}, \"variantenwechsel\": {\"checked\": false, \"von_tarif\": \"\", \"nach_tarif\": \"\", \"gesamtvertrag\": {\"checked\": false}, \"teilvertrag\": {\"checked\": false, \"vertragsnummer\": \"\", \"bausparsumme\": \"\"}}, \"zusammenlegung\": {\"checked\": false, \"vertragsnummern\": \"\"}, \"stammnummernaenderung\": {\"checked\": false, \"vertraege\": \"\"}, \"wahlzuteilung\": {\"checked\": false, \"prozentwert\": \"\"}}"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image",
+            "image": "images\\bsw_01_preprocessed_section_3.jpg"
+          },
+          {
+            "type": "text",
+            "text": "You are tasked with extracting values from a german document in valid json format.\nHere is the full list of possible objects:\n{\n  \"umbuchung_beantragen\": {\n    \"checked\": false,\n    \"von_bausparnummer\": \"\",\n    \"auf_bausparnummer\": \"\",\n    \"betrag\": \"\",\n    \"datum\": \"\"\n  }\n}\nReturn the json. Objects can be empty. Checkboxes (crossed out in the document) are labeled checked in the json and should be a boolean."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"umbuchung_beantragen\": {\"checked\": true, \"von_bausparnummer\": \"G01\", \"auf_bausparnummer\": \"G02\", \"betrag\": \"10,00\", \"datum\": \"10.01.23\"}}"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image",
+            "image": "images\\bsw_01_preprocessed_section_4.jpg"
+          },
+          {
+            "type": "text",
+            "text": "You are tasked with extracting values from a german document in valid json format.\nHere is the full list of possible objects:\n{\n  \"staatliche_foerderung\": {\n    \"checked\": false,\n    \"bestaetigung\": {\n      \"checked\": false,\n      \"jahr\": \"\"\n    },\n    \"wop_antrag\": {\n      \"checked\": false,\n      \"jahr\": \"\"\n    }\n  }\n}\nReturn the json. Objects can be empty. Checkboxes (crossed out in the document) are labeled checked in the json and should be a boolean."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"staatliche_foerderung\": {\"checked\": false, \"bestaetigung\": {\"checked\": false, \"jahr\": \"\"}, \"wop_antrag\": {\"checked\": false, \"jahr\": \"\"}}}"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image",
+            "image": "images\\bsw_01_preprocessed_section_5.jpg"
+          },
+          {
+            "type": "text",
+            "text": "You are tasked with extracting values from a german document in valid json format.\nHere is the full list of possible objects:\n{\n  \"betreuung_aendern\": {\n    \"checked\": false,\n    \"name\": \"\",\n    \"bankleitzahl\": \"\",\n    \"filial_nr\": \"\",\n    \"adm_gnr\": \"\",\n    \"monat\": \"mm\",\n    \"jahr\": \"yy\",\n    \"grund\": \"\"\n  }\n}\nReturn the json. Objects can be empty. Checkboxes (crossed out in the document) are labeled checked in the json and should be a boolean."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"betreuung_aendern\": {\"checked\": false, \"name\": \"\", \"bankleitzahl\": \"\", \"filial_nr\": \"\", \"adm_gnr\": \"\", \"monat\": \"mm\", \"jahr\": \"yy\", \"grund\": \"\"}}"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image",
+            "image": "images\\bsw_02_preprocessed_section_0.jpg"
+          },
+          {
+            "type": "text",
+            "text": "You are tasked with extracting values from a german document in valid json format.\nHere is the full list of possible objects:\n{\n  \"bausparnummer\": \"\",\n  \"darlehensnummer\": \"\",\n  \"anschrift\": {\n      \"vorname\": \"\",\n      \"nachname\": \"\",\n      \"strasse\": \"\",\n      \"hausnummer\": \"\",\n      \"postleitzahl\": \"\",\n      \"ort\": \"\"\n  }\n}\nReturn the json. Objects can be empty. Checkboxes (crossed out in the document) are labeled checked in the json and should be a boolean."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"bausparnummer\": \"00000283E02\", \"darlehensnummer\": \"\", \"anschrift\": {\"vorname\": \"\", \"nachname\": \"\", \"strasse\": \"\", \"hausnummer\": \"\", \"postleitzahl\": \"\", \"ort\": \"\"}}"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image",
+            "image": "images\\bsw_02_preprocessed_section_1.jpg"
+          },
+          {
+            "type": "text",
+            "text": "You are tasked with extracting values from a german document in valid json format.\nHere is the full list of possible objects:\n{\n  \"adresse_name_aendern\": {\n      \"checked\": false\n  },\n  \"neue_anschrift\": {\n    \"checked\": false,\n    \"vorname\": \"\",\n    \"nachname\": \"\",\n    \"strasse\": \"\",\n    \"hausnummer\": \"\",\n    \"postleitzahl\": \"\",\n    \"ort\": \"\",\n    \"telefon_privat\": \"\",\n    \"telefon_geschaeftlich\": \"\"\n  },\n  \"aenderung_alle_vertraege\": {\n    \"checked\": false\n  },\n  \"aenderung_folgende_vertraege\": {\n    \"checked\": false,\n    \"vertrag\": \"\"\n  },\n  \"weiter_betreut_werden\": {\n    \"checked\": false\n  }\n}\nReturn the json. Objects can be empty. Checkboxes (crossed out in the document) are labeled checked in the json and should be a boolean."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"adresse_name_aendern\": {\"checked\": true}, \"neue_anschrift\": {\"checked\": true, \"vorname\": \"Johannes\", \"nachname\": \"Zeller\", \"strasse\": \"Quellenstra\\u00dfe\", \"hausnummer\": \"7\", \"postleitzahl\": \"70376\", \"ort\": \"Stuttgart\", \"telefon_privat\": \"\", \"telefon_geschaeftlich\": \"\"}, \"aenderung_alle_vertraege\": {\"checked\": false}, \"aenderung_folgende_vertraege\": {\"checked\": true, \"vertrag\": \"\"}, \"weiter_betreut_werden\": {\"checked\": false}}"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image",
+            "image": "images\\bsw_02_preprocessed_section_2.jpg"
+          },
+          {
+            "type": "text",
+            "text": "You are tasked with extracting values from a german document in valid json format.\nHere is the full list of possible objects:\n{\n  \"vertragsaenderung_beantragen\": {\n    \"checked\": false\n  },\n  \"flexible_vertragsteilung\": { \n    \"checked\": false,\n    \"bausparsumme_1\": \"\",\n    \"guthaben_1\": \"\",\n    \"bausparsumme_2\": \"\",\n    \"guthaben_2\": \"\"\n  },\n  \"anspruch_junge_leute_bonus\": {\n    \"checked\": false,\n    \"teilvertrag\": \"\"\n  },\n  \"ermaessigung_bausparsumme\": {\n    \"checked\": false,\n    \"ermaessigung_bausparsumme_auf\": \"\"\n  },\n  \"variantenwechsel\": {\n    \"checked\": false,\n    \"von_tarif\": \"\",\n    \"nach_tarif\": \"\",\n    \"gesamtvertrag\": {\n      \"checked\": false\n    },\n    \"teilvertrag\": {\n      \"checked\": false,\n      \"vertragsnummer\": \"\",\n      \"bausparsumme\": \"\"\n    }\n  },\n  \"zusammenlegung\": {\n    \"checked\": false,\n    \"vertragsnummern\": \"\"\n  },\n  \"stammnummernaenderung\": {\n    \"checked\": false,\n    \"vertraege\": \"\"\n  },\n  \"wahlzuteilung\": {\n    \"checked\": false,\n    \"prozentwert\": \"\"\n  }\n}\nReturn the json. Objects can be empty. Checkboxes (crossed out in the document) are labeled checked in the json and should be a boolean."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"vertragsaenderung_beantragen\": {\"checked\": false}, \"flexible_vertragsteilung\": {\"checked\": false, \"bausparsumme_1\": \"\", \"guthaben_1\": \"\", \"bausparsumme_2\": \"\", \"guthaben_2\": \"\"}, \"anspruch_junge_leute_bonus\": {\"checked\": false, \"teilvertrag\": \"\"}, \"ermaessigung_bausparsumme\": {\"checked\": false, \"ermaessigung_bausparsumme_auf\": \"\"}, \"variantenwechsel\": {\"checked\": false, \"von_tarif\": \"\", \"nach_tarif\": \"\", \"gesamtvertrag\": {\"checked\": false}, \"teilvertrag\": {\"checked\": false, \"vertragsnummer\": \"\", \"bausparsumme\": \"\"}}, \"zusammenlegung\": {\"checked\": false, \"vertragsnummern\": \"\"}, \"stammnummernaenderung\": {\"checked\": false, \"vertraege\": \"\"}, \"wahlzuteilung\": {\"checked\": false, \"prozentwert\": \"\"}}"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image",
+            "image": "images\\bsw_02_preprocessed_section_3.jpg"
+          },
+          {
+            "type": "text",
+            "text": "You are tasked with extracting values from a german document in valid json format.\nHere is the full list of possible objects:\n{\n  \"umbuchung_beantragen\": {\n    \"checked\": false,\n    \"von_bausparnummer\": \"\",\n    \"auf_bausparnummer\": \"\",\n    \"betrag\": \"\",\n    \"datum\": \"\"\n  }\n}\nReturn the json. Objects can be empty. Checkboxes (crossed out in the document) are labeled checked in the json and should be a boolean."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"umbuchung_beantragen\": {\"checked\": true, \"von_bausparnummer\": \"\", \"auf_bausparnummer\": \"\", \"betrag\": \"\", \"datum\": \"\"}}"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image",
+            "image": "images\\bsw_02_preprocessed_section_4.jpg"
+          },
+          {
+            "type": "text",
+            "text": "You are tasked with extracting values from a german document in valid json format.\nHere is the full list of possible objects:\n{\n  \"staatliche_foerderung\": {\n    \"checked\": false,\n    \"bestaetigung\": {\n      \"checked\": false,\n      \"jahr\": \"\"\n    },\n    \"wop_antrag\": {\n      \"checked\": false,\n      \"jahr\": \"\"\n    }\n  }\n}\nReturn the json. Objects can be empty. Checkboxes (crossed out in the document) are labeled checked in the json and should be a boolean."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"staatliche_foerderung\": {\"checked\": false, \"bestaetigung\": {\"checked\": false, \"jahr\": \"\"}, \"wop_antrag\": {\"checked\": true, \"jahr\": \"2020\"}}}"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image",
+            "image": "images\\bsw_02_preprocessed_section_5.jpg"
+          },
+          {
+            "type": "text",
+            "text": "You are tasked with extracting values from a german document in valid json format.\nHere is the full list of possible objects:\n{\n  \"betreuung_aendern\": {\n    \"checked\": false,\n    \"name\": \"\",\n    \"bankleitzahl\": \"\",\n    \"filial_nr\": \"\",\n    \"adm_gnr\": \"\",\n    \"monat\": \"mm\",\n    \"jahr\": \"yy\",\n    \"grund\": \"\"\n  }\n}\nReturn the json. Objects can be empty. Checkboxes (crossed out in the document) are labeled checked in the json and should be a boolean."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"betreuung_aendern\": {\"checked\": false, \"name\": \"\", \"bankleitzahl\": \"\", \"filial_nr\": \"\", \"adm_gnr\": \"\", \"monat\": \"mm\", \"jahr\": \"yy\", \"grund\": \"\"}}"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image",
+            "image": "images\\dbw_self_preprocessed_section_0.jpg"
+          },
+          {
+            "type": "text",
+            "text": "You are tasked with extracting values from a german document in valid json format.\nHere is the full list of possible objects:\n{\n  \"bausparnummer\": \"\",\n  \"darlehensnummer\": \"\",\n  \"anschrift\": {\n      \"vorname\": \"\",\n      \"nachname\": \"\",\n      \"strasse\": \"\",\n      \"hausnummer\": \"\",\n      \"postleitzahl\": \"\",\n      \"ort\": \"\"\n  }\n}\nReturn the json. Objects can be empty. Checkboxes (crossed out in the document) are labeled checked in the json and should be a boolean."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"bausparnummer\": \"00077213F02\", \"darlehensnummer\": \"\", \"anschrift\": {\"vorname\": \"Lars\", \"nachname\": \"Rothenbach\", \"strasse\": \"Am Rain\", \"hausnummer\": \"15\", \"postleitzahl\": \"71540\", \"ort\": \"Murrhardt\"}}"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image",
+            "image": "images\\dbw_self_preprocessed_section_1.jpg"
+          },
+          {
+            "type": "text",
+            "text": "You are tasked with extracting values from a german document in valid json format.\nHere is the full list of possible objects:\n{\n  \"adresse_name_aendern\": {\n      \"checked\": false\n  },\n  \"neue_anschrift\": {\n    \"checked\": false,\n    \"vorname\": \"\",\n    \"nachname\": \"\",\n    \"strasse\": \"\",\n    \"hausnummer\": \"\",\n    \"postleitzahl\": \"\",\n    \"ort\": \"\",\n    \"telefon_privat\": \"\",\n    \"telefon_geschaeftlich\": \"\"\n  },\n  \"aenderung_alle_vertraege\": {\n    \"checked\": false\n  },\n  \"aenderung_folgende_vertraege\": {\n    \"checked\": false,\n    \"vertrag\": \"\"\n  },\n  \"weiter_betreut_werden\": {\n    \"checked\": false\n  }\n}\nReturn the json. Objects can be empty. Checkboxes (crossed out in the document) are labeled checked in the json and should be a boolean."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"adresse_name_aendern\": {\"checked\": true}, \"neue_anschrift\": {\"checked\": true, \"vorname\": \"Lars\", \"nachname\": \"Rothenbach\", \"strasse\": \"Neunbronn\", \"hausnummer\": \"1\", \"postleitzahl\": \"74523\", \"ort\": \"Schw\\u00e4bisch Hall\", \"telefon_privat\": \"016123456\", \"telefon_geschaeftlich\": \"\"}, \"aenderung_alle_vertraege\": {\"checked\": false}, \"aenderung_folgende_vertraege\": {\"checked\": true, \"vertrag\": \"F018R\"}, \"weiter_betreut_werden\": {\"checked\": false}}"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image",
+            "image": "images\\dbw_self_preprocessed_section_2.jpg"
+          },
+          {
+            "type": "text",
+            "text": "You are tasked with extracting values from a german document in valid json format.\nHere is the full list of possible objects:\n{\n  \"vertragsaenderung_beantragen\": {\n    \"checked\": false\n  },\n  \"flexible_vertragsteilung\": { \n    \"checked\": false,\n    \"bausparsumme_1\": \"\",\n    \"guthaben_1\": \"\",\n    \"bausparsumme_2\": \"\",\n    \"guthaben_2\": \"\"\n  },\n  \"anspruch_junge_leute_bonus\": {\n    \"checked\": false,\n    \"teilvertrag\": \"\"\n  },\n  \"ermaessigung_bausparsumme\": {\n    \"checked\": false,\n    \"ermaessigung_bausparsumme_auf\": \"\"\n  },\n  \"variantenwechsel\": {\n    \"checked\": false,\n    \"von_tarif\": \"\",\n    \"nach_tarif\": \"\",\n    \"gesamtvertrag\": {\n      \"checked\": false\n    },\n    \"teilvertrag\": {\n      \"checked\": false,\n      \"vertragsnummer\": \"\",\n      \"bausparsumme\": \"\"\n    }\n  },\n  \"zusammenlegung\": {\n    \"checked\": false,\n    \"vertragsnummern\": \"\"\n  },\n  \"stammnummernaenderung\": {\n    \"checked\": false,\n    \"vertraege\": \"\"\n  },\n  \"wahlzuteilung\": {\n    \"checked\": false,\n    \"prozentwert\": \"\"\n  }\n}\nReturn the json. Objects can be empty. Checkboxes (crossed out in the document) are labeled checked in the json and should be a boolean."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"vertragsaenderung_beantragen\": {\"checked\": true}, \"flexible_vertragsteilung\": {\"checked\": true, \"bausparsumme_1\": \"10000\", \"guthaben_1\": \"7772\", \"bausparsumme_2\": \"20000\", \"guthaben_2\": \"1235\"}, \"anspruch_junge_leute_bonus\": {\"checked\": false, \"teilvertrag\": \"\"}, \"ermaessigung_bausparsumme\": {\"checked\": false, \"ermaessigung_bausparsumme_auf\": \"\"}, \"variantenwechsel\": {\"checked\": false, \"von_tarif\": \"\", \"nach_tarif\": \"\", \"gesamtvertrag\": {\"checked\": false}, \"teilvertrag\": {\"checked\": false, \"vertragsnummer\": \"\", \"bausparsumme\": \"\"}}, \"zusammenlegung\": {\"checked\": false, \"vertragsnummern\": \"\"}, \"stammnummernaenderung\": {\"checked\": false, \"vertraege\": \"\"}, \"wahlzuteilung\": {\"checked\": false, \"prozentwert\": \"\"}}"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image",
+            "image": "images\\dbw_self_preprocessed_section_3.jpg"
+          },
+          {
+            "type": "text",
+            "text": "You are tasked with extracting values from a german document in valid json format.\nHere is the full list of possible objects:\n{\n  \"umbuchung_beantragen\": {\n    \"checked\": false,\n    \"von_bausparnummer\": \"\",\n    \"auf_bausparnummer\": \"\",\n    \"betrag\": \"\",\n    \"datum\": \"\"\n  }\n}\nReturn the json. Objects can be empty. Checkboxes (crossed out in the document) are labeled checked in the json and should be a boolean."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"umbuchung_beantragen\": {\"checked\": false, \"von_bausparnummer\": \"\", \"auf_bausparnummer\": \"\", \"betrag\": \"\", \"datum\": \"\"}}"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image",
+            "image": "images\\dbw_self_preprocessed_section_4.jpg"
+          },
+          {
+            "type": "text",
+            "text": "You are tasked with extracting values from a german document in valid json format.\nHere is the full list of possible objects:\n{\n  \"staatliche_foerderung\": {\n    \"checked\": false,\n    \"bestaetigung\": {\n      \"checked\": false,\n      \"jahr\": \"\"\n    },\n    \"wop_antrag\": {\n      \"checked\": false,\n      \"jahr\": \"\"\n    }\n  }\n}\nReturn the json. Objects can be empty. Checkboxes (crossed out in the document) are labeled checked in the json and should be a boolean."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"staatliche_foerderung\": {\"checked\": false, \"bestaetigung\": {\"checked\": false, \"jahr\": \"\"}, \"wop_antrag\": {\"checked\": false, \"jahr\": \"\"}}}"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image",
+            "image": "images\\dbw_self_preprocessed_section_5.jpg"
+          },
+          {
+            "type": "text",
+            "text": "You are tasked with extracting values from a german document in valid json format.\nHere is the full list of possible objects:\n{\n  \"betreuung_aendern\": {\n    \"checked\": false,\n    \"name\": \"\",\n    \"bankleitzahl\": \"\",\n    \"filial_nr\": \"\",\n    \"adm_gnr\": \"\",\n    \"monat\": \"mm\",\n    \"jahr\": \"yy\",\n    \"grund\": \"\"\n  }\n}\nReturn the json. Objects can be empty. Checkboxes (crossed out in the document) are labeled checked in the json and should be a boolean."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"betreuung_aendern\": {\"checked\": true, \"name\": \"Holger Ley\", \"bankleitzahl\": \"\", \"filial_nr\": \"\", \"adm_gnr\": \"\", \"monat\": \"11\", \"jahr\": \"24\", \"grund\": \"Umzug\"}}"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image",
+            "image": "images\\flowill_preprocessed_section_0.jpg"
+          },
+          {
+            "type": "text",
+            "text": "You are tasked with extracting values from a german document in valid json format.\nHere is the full list of possible objects:\n{\n  \"bausparnummer\": \"\",\n  \"darlehensnummer\": \"\",\n  \"anschrift\": {\n      \"vorname\": \"\",\n      \"nachname\": \"\",\n      \"strasse\": \"\",\n      \"hausnummer\": \"\",\n      \"postleitzahl\": \"\",\n      \"ort\": \"\"\n  }\n}\nReturn the json. Objects can be empty. Checkboxes (crossed out in the document) are labeled checked in the json and should be a boolean."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"bausparnummer\": \"184X077114B\", \"darlehensnummer\": \"\", \"anschrift\": {\"vorname\": \"Florian\", \"nachname\": \"Will\", \"strasse\": \"Brenn\\u00e4cker\", \"hausnummer\": \"19\", \"postleitzahl\": \"71540\", \"ort\": \"Murrhardt\"}}"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image",
+            "image": "images\\flowill_preprocessed_section_1.jpg"
+          },
+          {
+            "type": "text",
+            "text": "You are tasked with extracting values from a german document in valid json format.\nHere is the full list of possible objects:\n{\n  \"adresse_name_aendern\": {\n      \"checked\": false\n  },\n  \"neue_anschrift\": {\n    \"checked\": false,\n    \"vorname\": \"\",\n    \"nachname\": \"\",\n    \"strasse\": \"\",\n    \"hausnummer\": \"\",\n    \"postleitzahl\": \"\",\n    \"ort\": \"\",\n    \"telefon_privat\": \"\",\n    \"telefon_geschaeftlich\": \"\"\n  },\n  \"aenderung_alle_vertraege\": {\n    \"checked\": false\n  },\n  \"aenderung_folgende_vertraege\": {\n    \"checked\": false,\n    \"vertrag\": \"\"\n  },\n  \"weiter_betreut_werden\": {\n    \"checked\": false\n  }\n}\nReturn the json. Objects can be empty. Checkboxes (crossed out in the document) are labeled checked in the json and should be a boolean."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"adresse_name_aendern\": {\"checked\": true}, \"neue_anschrift\": {\"checked\": true, \"vorname\": \"Flo\", \"nachname\": \"Will\", \"strasse\": \"Sulzbacher Str.\", \"hausnummer\": \"202\", \"postleitzahl\": \"71522\", \"ort\": \"Backnang\", \"telefon_privat\": \"07181202\", \"telefon_geschaeftlich\": \"\"}, \"aenderung_alle_vertraege\": {\"checked\": true}, \"aenderung_folgende_vertraege\": {\"checked\": false, \"vertrag\": \"\"}, \"weiter_betreut_werden\": {\"checked\": true}}"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image",
+            "image": "images\\flowill_preprocessed_section_2.jpg"
+          },
+          {
+            "type": "text",
+            "text": "You are tasked with extracting values from a german document in valid json format.\nHere is the full list of possible objects:\n{\n  \"vertragsaenderung_beantragen\": {\n    \"checked\": false\n  },\n  \"flexible_vertragsteilung\": { \n    \"checked\": false,\n    \"bausparsumme_1\": \"\",\n    \"guthaben_1\": \"\",\n    \"bausparsumme_2\": \"\",\n    \"guthaben_2\": \"\"\n  },\n  \"anspruch_junge_leute_bonus\": {\n    \"checked\": false,\n    \"teilvertrag\": \"\"\n  },\n  \"ermaessigung_bausparsumme\": {\n    \"checked\": false,\n    \"ermaessigung_bausparsumme_auf\": \"\"\n  },\n  \"variantenwechsel\": {\n    \"checked\": false,\n    \"von_tarif\": \"\",\n    \"nach_tarif\": \"\",\n    \"gesamtvertrag\": {\n      \"checked\": false\n    },\n    \"teilvertrag\": {\n      \"checked\": false,\n      \"vertragsnummer\": \"\",\n      \"bausparsumme\": \"\"\n    }\n  },\n  \"zusammenlegung\": {\n    \"checked\": false,\n    \"vertragsnummern\": \"\"\n  },\n  \"stammnummernaenderung\": {\n    \"checked\": false,\n    \"vertraege\": \"\"\n  },\n  \"wahlzuteilung\": {\n    \"checked\": false,\n    \"prozentwert\": \"\"\n  }\n}\nReturn the json. Objects can be empty. Checkboxes (crossed out in the document) are labeled checked in the json and should be a boolean."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"vertragsaenderung_beantragen\": {\"checked\": true}, \"flexible_vertragsteilung\": {\"checked\": false, \"bausparsumme_1\": \"\", \"guthaben_1\": \"\", \"bausparsumme_2\": \"\", \"guthaben_2\": \"\"}, \"anspruch_junge_leute_bonus\": {\"checked\": false, \"teilvertrag\": \"\"}, \"ermaessigung_bausparsumme\": {\"checked\": false, \"ermaessigung_bausparsumme_auf\": \"\"}, \"variantenwechsel\": {\"checked\": false, \"von_tarif\": \"\", \"nach_tarif\": \"\", \"gesamtvertrag\": {\"checked\": false}, \"teilvertrag\": {\"checked\": false, \"vertragsnummer\": \"\", \"bausparsumme\": \"\"}}, \"zusammenlegung\": {\"checked\": false, \"vertragsnummern\": \"\"}, \"stammnummernaenderung\": {\"checked\": false, \"vertraege\": \"\"}, \"wahlzuteilung\": {\"checked\": true, \"prozentwert\": \"50\"}}"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image",
+            "image": "images\\flowill_preprocessed_section_3.jpg"
+          },
+          {
+            "type": "text",
+            "text": "You are tasked with extracting values from a german document in valid json format.\nHere is the full list of possible objects:\n{\n  \"umbuchung_beantragen\": {\n    \"checked\": false,\n    \"von_bausparnummer\": \"\",\n    \"auf_bausparnummer\": \"\",\n    \"betrag\": \"\",\n    \"datum\": \"\"\n  }\n}\nReturn the json. Objects can be empty. Checkboxes (crossed out in the document) are labeled checked in the json and should be a boolean."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"umbuchung_beantragen\": {\"checked\": true, \"von_bausparnummer\": \"F3108X\", \"auf_bausparnummer\": \"E3280A\", \"betrag\": \"1,111,111\", \"datum\": \"21.11.2024\"}}"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image",
+            "image": "images\\flowill_preprocessed_section_4.jpg"
+          },
+          {
+            "type": "text",
+            "text": "You are tasked with extracting values from a german document in valid json format.\nHere is the full list of possible objects:\n{\n  \"staatliche_foerderung\": {\n    \"checked\": false,\n    \"bestaetigung\": {\n      \"checked\": false,\n      \"jahr\": \"\"\n    },\n    \"wop_antrag\": {\n      \"checked\": false,\n      \"jahr\": \"\"\n    }\n  }\n}\nReturn the json. Objects can be empty. Checkboxes (crossed out in the document) are labeled checked in the json and should be a boolean."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"staatliche_foerderung\": {\"checked\": true, \"bestaetigung\": {\"checked\": true, \"jahr\": \"2024\"}, \"wop_antrag\": {\"checked\": true, \"jahr\": \"2024\"}}}"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image",
+            "image": "images\\flowill_preprocessed_section_5.jpg"
+          },
+          {
+            "type": "text",
+            "text": "You are tasked with extracting values from a german document in valid json format.\nHere is the full list of possible objects:\n{\n  \"betreuung_aendern\": {\n    \"checked\": false,\n    \"name\": \"\",\n    \"bankleitzahl\": \"\",\n    \"filial_nr\": \"\",\n    \"adm_gnr\": \"\",\n    \"monat\": \"mm\",\n    \"jahr\": \"yy\",\n    \"grund\": \"\"\n  }\n}\nReturn the json. Objects can be empty. Checkboxes (crossed out in the document) are labeled checked in the json and should be a boolean."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"betreuung_aendern\": {\"checked\": true, \"name\": \"VR Backnang EV, Mario B\\u00fccheler\", \"bankleitzahl\": \"\", \"filial_nr\": \"110\", \"adm_gnr\": \"\", \"monat\": \"10\", \"jahr\": \"24\", \"grund\": \"Umzug nach Backnang\"}}"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image",
+            "image": "images\\habeck_preprocessed_section_0.jpg"
+          },
+          {
+            "type": "text",
+            "text": "You are tasked with extracting values from a german document in valid json format.\nHere is the full list of possible objects:\n{\n  \"bausparnummer\": \"\",\n  \"darlehensnummer\": \"\",\n  \"anschrift\": {\n      \"vorname\": \"\",\n      \"nachname\": \"\",\n      \"strasse\": \"\",\n      \"hausnummer\": \"\",\n      \"postleitzahl\": \"\",\n      \"ort\": \"\"\n  }\n}\nReturn the json. Objects can be empty. Checkboxes (crossed out in the document) are labeled checked in the json and should be a boolean."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"bausparnummer\": \"12X17711324\", \"darlehensnummer\": \"\", \"anschrift\": {\"vorname\": \"Robert\", \"nachname\": \"Habeck\", \"strasse\": \"Minister Str.\", \"hausnummer\": \"113\", \"postleitzahl\": \"10115\", \"ort\": \"Berlin\"}}"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image",
+            "image": "images\\habeck_preprocessed_section_1.jpg"
+          },
+          {
+            "type": "text",
+            "text": "You are tasked with extracting values from a german document in valid json format.\nHere is the full list of possible objects:\n{\n  \"adresse_name_aendern\": {\n      \"checked\": false\n  },\n  \"neue_anschrift\": {\n    \"checked\": false,\n    \"vorname\": \"\",\n    \"nachname\": \"\",\n    \"strasse\": \"\",\n    \"hausnummer\": \"\",\n    \"postleitzahl\": \"\",\n    \"ort\": \"\",\n    \"telefon_privat\": \"\",\n    \"telefon_geschaeftlich\": \"\"\n  },\n  \"aenderung_alle_vertraege\": {\n    \"checked\": false\n  },\n  \"aenderung_folgende_vertraege\": {\n    \"checked\": false,\n    \"vertrag\": \"\"\n  },\n  \"weiter_betreut_werden\": {\n    \"checked\": false\n  }\n}\nReturn the json. Objects can be empty. Checkboxes (crossed out in the document) are labeled checked in the json and should be a boolean."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"adresse_name_aendern\": {\"checked\": true}, \"neue_anschrift\": {\"checked\": true, \"vorname\": \"Robert\", \"nachname\": \"Habeck\", \"strasse\": \"Kanzler Str.\", \"hausnummer\": \"1\", \"postleitzahl\": \"10115\", \"ort\": \"Berlin\", \"telefon_privat\": \"030\", \"telefon_geschaeftlich\": \"1337\"}, \"aenderung_alle_vertraege\": {\"checked\": true}, \"aenderung_folgende_vertraege\": {\"checked\": false, \"vertrag\": \"\"}, \"weiter_betreut_werden\": {\"checked\": true}}"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image",
+            "image": "images\\habeck_preprocessed_section_2.jpg"
+          },
+          {
+            "type": "text",
+            "text": "You are tasked with extracting values from a german document in valid json format.\nHere is the full list of possible objects:\n{\n  \"vertragsaenderung_beantragen\": {\n    \"checked\": false\n  },\n  \"flexible_vertragsteilung\": { \n    \"checked\": false,\n    \"bausparsumme_1\": \"\",\n    \"guthaben_1\": \"\",\n    \"bausparsumme_2\": \"\",\n    \"guthaben_2\": \"\"\n  },\n  \"anspruch_junge_leute_bonus\": {\n    \"checked\": false,\n    \"teilvertrag\": \"\"\n  },\n  \"ermaessigung_bausparsumme\": {\n    \"checked\": false,\n    \"ermaessigung_bausparsumme_auf\": \"\"\n  },\n  \"variantenwechsel\": {\n    \"checked\": false,\n    \"von_tarif\": \"\",\n    \"nach_tarif\": \"\",\n    \"gesamtvertrag\": {\n      \"checked\": false\n    },\n    \"teilvertrag\": {\n      \"checked\": false,\n      \"vertragsnummer\": \"\",\n      \"bausparsumme\": \"\"\n    }\n  },\n  \"zusammenlegung\": {\n    \"checked\": false,\n    \"vertragsnummern\": \"\"\n  },\n  \"stammnummernaenderung\": {\n    \"checked\": false,\n    \"vertraege\": \"\"\n  },\n  \"wahlzuteilung\": {\n    \"checked\": false,\n    \"prozentwert\": \"\"\n  }\n}\nReturn the json. Objects can be empty. Checkboxes (crossed out in the document) are labeled checked in the json and should be a boolean."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"vertragsaenderung_beantragen\": {\"checked\": false}, \"flexible_vertragsteilung\": {\"checked\": false, \"bausparsumme_1\": \"\", \"guthaben_1\": \"\", \"bausparsumme_2\": \"\", \"guthaben_2\": \"\"}, \"anspruch_junge_leute_bonus\": {\"checked\": false, \"teilvertrag\": \"\"}, \"ermaessigung_bausparsumme\": {\"checked\": false, \"ermaessigung_bausparsumme_auf\": \"\"}, \"variantenwechsel\": {\"checked\": false, \"von_tarif\": \"\", \"nach_tarif\": \"\", \"gesamtvertrag\": {\"checked\": false}, \"teilvertrag\": {\"checked\": false, \"vertragsnummer\": \"\", \"bausparsumme\": \"\"}}, \"zusammenlegung\": {\"checked\": false, \"vertragsnummern\": \"\"}, \"stammnummernaenderung\": {\"checked\": false, \"vertraege\": \"\"}, \"wahlzuteilung\": {\"checked\": false, \"prozentwert\": \"\"}}"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image",
+            "image": "images\\habeck_preprocessed_section_3.jpg"
+          },
+          {
+            "type": "text",
+            "text": "You are tasked with extracting values from a german document in valid json format.\nHere is the full list of possible objects:\n{\n  \"umbuchung_beantragen\": {\n    \"checked\": false,\n    \"von_bausparnummer\": \"\",\n    \"auf_bausparnummer\": \"\",\n    \"betrag\": \"\",\n    \"datum\": \"\"\n  }\n}\nReturn the json. Objects can be empty. Checkboxes (crossed out in the document) are labeled checked in the json and should be a boolean."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"umbuchung_beantragen\": {\"checked\": true, \"von_bausparnummer\": \"12X17711324\", \"auf_bausparnummer\": \"12X18834521\", \"betrag\": \"1.000.000.000\", \"datum\": \"21.11.24\"}}"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image",
+            "image": "images\\habeck_preprocessed_section_4.jpg"
+          },
+          {
+            "type": "text",
+            "text": "You are tasked with extracting values from a german document in valid json format.\nHere is the full list of possible objects:\n{\n  \"staatliche_foerderung\": {\n    \"checked\": false,\n    \"bestaetigung\": {\n      \"checked\": false,\n      \"jahr\": \"\"\n    },\n    \"wop_antrag\": {\n      \"checked\": false,\n      \"jahr\": \"\"\n    }\n  }\n}\nReturn the json. Objects can be empty. Checkboxes (crossed out in the document) are labeled checked in the json and should be a boolean."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"staatliche_foerderung\": {\"checked\": true, \"bestaetigung\": {\"checked\": true, \"jahr\": \"2023\"}, \"wop_antrag\": {\"checked\": true, \"jahr\": \"2023\"}}}"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "image",
+            "image": "images\\habeck_preprocessed_section_5.jpg"
+          },
+          {
+            "type": "text",
+            "text": "You are tasked with extracting values from a german document in valid json format.\nHere is the full list of possible objects:\n{\n  \"betreuung_aendern\": {\n    \"checked\": false,\n    \"name\": \"\",\n    \"bankleitzahl\": \"\",\n    \"filial_nr\": \"\",\n    \"adm_gnr\": \"\",\n    \"monat\": \"mm\",\n    \"jahr\": \"yy\",\n    \"grund\": \"\"\n  }\n}\nReturn the json. Objects can be empty. Checkboxes (crossed out in the document) are labeled checked in the json and should be a boolean."
+          }
+        ]
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"betreuung_aendern\": {\"checked\": false, \"name\": \"\", \"bankleitzahl\": \"\", \"filial_nr\": \"\", \"adm_gnr\": \"\", \"monat\": \"mm\", \"jahr\": \"yy\", \"grund\": \"\"}}"
+          }
+        ]
+      }
+    ]
+  }
+]
