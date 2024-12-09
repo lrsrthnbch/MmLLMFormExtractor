@@ -6,7 +6,7 @@
         "content": [
           {
             "type": "image",
-            "image": "images\\bsw_01_preprocessed_section_0.jpg"
+            "image": "bsw_01_preprocessed_section_0.jpg"
           },
           {
             "type": "text",
@@ -32,7 +32,7 @@
         "content": [
           {
             "type": "image",
-            "image": "images\\bsw_01_preprocessed_section_1.jpg"
+            "image": "bsw_01_preprocessed_section_1.jpg"
           },
           {
             "type": "text",
@@ -58,7 +58,7 @@
         "content": [
           {
             "type": "image",
-            "image": "images\\bsw_01_preprocessed_section_2.jpg"
+            "image": "bsw_01_preprocessed_section_2.jpg"
           },
           {
             "type": "text",
@@ -84,7 +84,7 @@
         "content": [
           {
             "type": "image",
-            "image": "images\\bsw_01_preprocessed_section_3.jpg"
+            "image": "bsw_01_preprocessed_section_3.jpg"
           },
           {
             "type": "text",
@@ -110,7 +110,7 @@
         "content": [
           {
             "type": "image",
-            "image": "images\\bsw_01_preprocessed_section_4.jpg"
+            "image": "bsw_01_preprocessed_section_4.jpg"
           },
           {
             "type": "text",
@@ -136,7 +136,7 @@
         "content": [
           {
             "type": "image",
-            "image": "images\\bsw_01_preprocessed_section_5.jpg"
+            "image": "bsw_01_preprocessed_section_5.jpg"
           },
           {
             "type": "text",
@@ -162,7 +162,7 @@
         "content": [
           {
             "type": "image",
-            "image": "images\\bsw_02_preprocessed_section_0.jpg"
+            "image": "bsw_02_preprocessed_section_0.jpg"
           },
           {
             "type": "text",
@@ -188,7 +188,7 @@
         "content": [
           {
             "type": "image",
-            "image": "images\\bsw_02_preprocessed_section_1.jpg"
+            "image": "bsw_02_preprocessed_section_1.jpg"
           },
           {
             "type": "text",
@@ -214,7 +214,7 @@
         "content": [
           {
             "type": "image",
-            "image": "images\\bsw_02_preprocessed_section_2.jpg"
+            "image": "bsw_02_preprocessed_section_2.jpg"
           },
           {
             "type": "text",
@@ -240,7 +240,7 @@
         "content": [
           {
             "type": "image",
-            "image": "images\\bsw_02_preprocessed_section_3.jpg"
+            "image": "bsw_02_preprocessed_section_3.jpg"
           },
           {
             "type": "text",
@@ -266,7 +266,7 @@
         "content": [
           {
             "type": "image",
-            "image": "images\\bsw_02_preprocessed_section_4.jpg"
+            "image": "bsw_02_preprocessed_section_4.jpg"
           },
           {
             "type": "text",
@@ -292,7 +292,7 @@
         "content": [
           {
             "type": "image",
-            "image": "images\\bsw_02_preprocessed_section_5.jpg"
+            "image": "bsw_02_preprocessed_section_5.jpg"
           },
           {
             "type": "text",
@@ -318,7 +318,7 @@
         "content": [
           {
             "type": "image",
-            "image": "images\\dbw_self_preprocessed_section_0.jpg"
+            "image": "dbw_self_preprocessed_section_0.jpg"
           },
           {
             "type": "text",
@@ -344,7 +344,7 @@
         "content": [
           {
             "type": "image",
-            "image": "images\\dbw_self_preprocessed_section_1.jpg"
+            "image": "dbw_self_preprocessed_section_1.jpg"
           },
           {
             "type": "text",
@@ -370,7 +370,7 @@
         "content": [
           {
             "type": "image",
-            "image": "images\\dbw_self_preprocessed_section_2.jpg"
+            "image": "dbw_self_preprocessed_section_2.jpg"
           },
           {
             "type": "text",
@@ -396,7 +396,7 @@
         "content": [
           {
             "type": "image",
-            "image": "images\\dbw_self_preprocessed_section_3.jpg"
+            "image": "dbw_self_preprocessed_section_3.jpg"
           },
           {
             "type": "text",
@@ -422,7 +422,7 @@
         "content": [
           {
             "type": "image",
-            "image": "images\\dbw_self_preprocessed_section_4.jpg"
+            "image": "dbw_self_preprocessed_section_4.jpg"
           },
           {
             "type": "text",
@@ -448,7 +448,7 @@
         "content": [
           {
             "type": "image",
-            "image": "images\\dbw_self_preprocessed_section_5.jpg"
+            "image": "dbw_self_preprocessed_section_5.jpg"
           },
           {
             "type": "text",
@@ -474,7 +474,7 @@
         "content": [
           {
             "type": "image",
-            "image": "images\\flowill_preprocessed_section_0.jpg"
+            "image": "flowill_preprocessed_section_0.jpg"
           },
           {
             "type": "text",
@@ -500,7 +500,7 @@
         "content": [
           {
             "type": "image",
-            "image": "images\\flowill_preprocessed_section_1.jpg"
+            "image": "flowill_preprocessed_section_1.jpg"
           },
           {
             "type": "text",
@@ -526,7 +526,7 @@
         "content": [
           {
             "type": "image",
-            "image": "images\\flowill_preprocessed_section_2.jpg"
+            "image": "flowill_preprocessed_section_2.jpg"
           },
           {
             "type": "text",
@@ -552,7 +552,7 @@
         "content": [
           {
             "type": "image",
-            "image": "images\\flowill_preprocessed_section_3.jpg"
+            "image": "flowill_preprocessed_section_3.jpg"
           },
           {
             "type": "text",
@@ -578,7 +578,7 @@
         "content": [
           {
             "type": "image",
-            "image": "images\\flowill_preprocessed_section_4.jpg"
+            "image": "flowill_preprocessed_section_4.jpg"
           },
           {
             "type": "text",
@@ -604,7 +604,7 @@
         "content": [
           {
             "type": "image",
-            "image": "images\\flowill_preprocessed_section_5.jpg"
+            "image": "flowill_preprocessed_section_5.jpg"
           },
           {
             "type": "text",
@@ -630,7 +630,7 @@
         "content": [
           {
             "type": "image",
-            "image": "images\\habeck_preprocessed_section_0.jpg"
+            "image": "habeck_preprocessed_section_0.jpg"
           },
           {
             "type": "text",
@@ -656,7 +656,7 @@
         "content": [
           {
             "type": "image",
-            "image": "images\\habeck_preprocessed_section_1.jpg"
+            "image": "habeck_preprocessed_section_1.jpg"
           },
           {
             "type": "text",
@@ -682,7 +682,7 @@
         "content": [
           {
             "type": "image",
-            "image": "images\\habeck_preprocessed_section_2.jpg"
+            "image": "habeck_preprocessed_section_2.jpg"
           },
           {
             "type": "text",
@@ -708,7 +708,7 @@
         "content": [
           {
             "type": "image",
-            "image": "images\\habeck_preprocessed_section_3.jpg"
+            "image": "habeck_preprocessed_section_3.jpg"
           },
           {
             "type": "text",
@@ -734,7 +734,7 @@
         "content": [
           {
             "type": "image",
-            "image": "images\\habeck_preprocessed_section_4.jpg"
+            "image": "habeck_preprocessed_section_4.jpg"
           },
           {
             "type": "text",
@@ -760,7 +760,7 @@
         "content": [
           {
             "type": "image",
-            "image": "images\\habeck_preprocessed_section_5.jpg"
+            "image": "habeck_preprocessed_section_5.jpg"
           },
           {
             "type": "text",
